@@ -13,7 +13,7 @@ function Navbar() {
           </div>
 
           <div class='explore-btn content-center ps-18 px-10'>
-            <button class='border rounded-full text-center px-3 text-xl flex items-center gap-2'>
+            <button class='border rounded-full text-center px-3 text-lg flex items-center gap-2'>
               <span>Explore</span>
               <svg xmlns="http://www.w3.org/2000/svg" 
               fill="none" 
@@ -32,7 +32,7 @@ function Navbar() {
           </div>
 
           <div class='search-btn content-center'>
-            <button class='border rounded-full text-xl w-98 text-left px-8 font-[gilda-display] flex items-center justify-between'>
+            <button class='border rounded-full text-lg w-98 text-left px-8 flex items-center justify-between'>
               <span>What you want to learn..?</span>
               <svg xmlns="http://www.w3.org/2000/svg" 
               fill="none" 
@@ -52,7 +52,7 @@ function Navbar() {
           </div>
 
           <div class='language-btn content-center px-14'>
-            <button class='border rounded-full text-center px-4 text-xl flex items-center justify-between gap-2'>
+            <button class='border rounded-full text-center px-4 text-lg flex items-center justify-between gap-2'>
             <svg xmlns="http://www.w3.org/2000/svg" 
             fill="none" viewBox="0 0 24 24" 
             stroke-width="2" 
@@ -81,11 +81,11 @@ function Navbar() {
           </div>
 
           <div class='signup-btn content-center'>
-            <button class='border rounded-full text-center px-4 text-xl'>SignUp</button>
+            <button class='border rounded-full text-center px-4 text-lg'>SignUp</button>
           </div>
 
           <div class='login-btn content-center px-2'>
-            <button class='border rounded-full text-center px-6 text-xl'>Login</button>
+            <button class='border rounded-full text-center px-6 text-lg'>Login</button>
           </div>
 
         </div>
