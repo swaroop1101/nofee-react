@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  --font-family: 'Gilda Display', serif;
+}
+
+/* Apply the font using the variable */
+body {
+  font-family: var(--font-family);
+}
+
+@theme {
+  --shadow-lg: 3px 4px 3px rgba(0, 0, 0, 0.35); 
+}
