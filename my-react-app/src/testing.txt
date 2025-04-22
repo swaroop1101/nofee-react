@@ -1,0 +1,42 @@
+<div className='w-full bg-[#312d2d] text-white mt-16'>
+                {/* <div className='upper flex px-30 gap-56 py-15'> */}
+                <div className='text-center'>
+                    <div>
+                        <div className='logo content-center py-4'>
+                            {/* <h1 className='text-4xl font-extrabold'>PrepVio</h1> */}
+                            <h1 className='text-3xl font-extrabold sm:text-4xl'>PrepVio</h1>
+                            <p>v 1.0.0</p>
+                        </div>
+                        <div className='px-8'>
+                            <hr/>
+                        </div>
+                    </div>
+                <div>
+                
+                <div className='contact'>
+                        <div className='py-4'>
+                        <h1 className='mb-3 text-2xl font-semibold'>Contact Us</h1>
+                        <div className='text-lg'>
+                            <p>Address: [Your Address]</p>
+                            <p>Email: support@[yourwebsite].com</p>
+                            <p>Phone: [+XX-XXXXXXXXXX]</p>
+                        </div>
+                        </div>
+                        <div className='px-8'>
+                            <hr/>
+                        </div>
+                </div>
+                </div>
+
+                <div className='other-links'>
+                        <div className='py-4'>
+                        <h1 className='mb-3 text-2xl font-semibold'>Other Links</h1>
+                        <div className='text-lg'>
+                            <p>Our Team</p>
+                            <p>Feedback</p>
+                            <p>Terms & Conditions</p>
+                        </div>
+                        </div>
+                </div>
+                </div>
+            </div>

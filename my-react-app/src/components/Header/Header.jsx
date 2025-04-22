@@ -1,5 +1,5 @@
 import { TfiAlignJustify } from "react-icons/tfi";
-function Navbar() {
+function Header() {
     return (
       <>
         {/* <div className='h-13 bg-white shadow-md content-center'>
@@ -92,7 +92,8 @@ function Navbar() {
         </div>
         </div> */}
 
-        <div className='h-13 bg-[#e6e6e6] shadow-md content-center'>
+        
+        <div className='h-13 bg-[#e6e6e6] shadow-md content-center sticky top-0'>
                 <div className='w-full px-4 flex items-center justify-between lg:px-21 '>
                   <div class='Logo' className='flex flex-row items-center gap-3'>
                     <img 
@@ -105,8 +106,9 @@ function Navbar() {
                   <div class='lg:hidden'>
                     <TfiAlignJustify className='text-xl'/>
                   </div>
+
         
-                  <div class='explore-btn hidden lg:block content-center ps-18 px-10 xl:block ps-20 px-12'>
+                  <div class='explore-btn hidden lg:block content-center ps-18 px-10'>
                     <button class='border rounded-full text-center px-3 text-lg flex items-center gap-2'>
                       <span>Explore</span>
                       <svg xmlns="http://www.w3.org/2000/svg" 
@@ -186,8 +188,9 @@ function Navbar() {
         </div> 
 
         
+
       </>
     );
   }
   
-  export default Navbar;
+  export default Header;
