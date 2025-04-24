@@ -83,13 +83,13 @@ function Footer(){
                             <h1 className='text-3xl font-extrabold sm:text-4xl'>PrepVio</h1>
                             <p>v 1.0.0</p>
                         </div>
-                        <div className='px-8 sm:hidden'>
+                        <div className='px-8 md:hidden'>
                             <hr/>
                         </div>
                     </div>
 
                     <div className='Contact'>
-                        <div className='text-center sm:content-center py-4 sm:text-left'>
+                        <div className='text-center py-4 md:content-center md:text-left'>
                             <h1 className='mb-3 text-2xl font-semibold'>Contact Us</h1>
                                 <div className='text-lg'>
                                     <p>Address: [Your Address]</p>
@@ -97,13 +97,13 @@ function Footer(){
                                     <p>Phone: [+XX-XXXXXXXXXX]</p>
                                 </div>
                         </div>
-                        <div className='px-8 sm:hidden'>
+                        <div className='px-8 md:hidden'>
                             <hr/>
                         </div>
                     </div>
 
                     <div className='other-links'>
-                        <div className='text-center sm:content-center py-4 sm:text-left'>
+                        <div className='text-center py-4 md:content-center md:text-left'>
                             <h1 className='mb-3 text-2xl font-semibold'>Other Links</h1>
                                 <div className='text-lg'>
                                     <p>Our Team</p>
@@ -111,7 +111,7 @@ function Footer(){
                                     <p>Terms & Conditions</p>
                                 </div>
                         </div>
-                        <div className='px-8 sm:hidden'>
+                        <div className='px-8 md:hidden'>
                             <hr/>
                         </div>
                     </div>
