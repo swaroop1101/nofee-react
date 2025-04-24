@@ -75,9 +75,9 @@ function Footer(){
                 </div>   
             </div> */}
 
-            <div className='w-full bg-[#312d2d] text-white mt-13 sm:mt-16'>
+            <div className='w-full bg-[#312d2d] text-white mt-13 sm:mt-16 md:content-center md:h-110 xl:block'>
 
-                <div className='block sm:upper sm:flex sm:px-30 sm:gap-56 sm:py-12'>
+                <div className='block md:flex justify-between px-6 lg:px-18 xl:upper xl:flex xl:px-30 xl:gap-56 xl:py-12'>
                     <div className='Logo content-center'>
                         <div className='content-center py-4 text-center'>
                             <h1 className='text-3xl font-extrabold sm:text-4xl'>PrepVio</h1>
@@ -117,7 +117,7 @@ function Footer(){
                     </div>
                 </div>
 
-                <div className='hidden sm:block px-30'>
+                <div className='hidden md:block md:px-8 lg:px-17 xl:block xl:px-30'>
                     <hr/>
                 </div>
 
@@ -164,7 +164,7 @@ function Footer(){
 
                         </div>
                         <div className='py-2'>
-                            <h1 className='text-lg sm:text-lg mb-4'>
+                            <h1 className='text-lg md:text-lg md:mb-0'>
                                 {'\u00A9'} Copyright 2025 PrepVio. <br className='sm:hidden'/>All rights Reserved
                             </h1>
                         </div>
