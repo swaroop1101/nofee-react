@@ -1,4 +1,6 @@
+@import "@mantine/core/styles.css";
 @import "tailwindcss";
+
 
 :root {
     --font-family: 'Gilda Display', serif;
@@ -12,3 +14,4 @@
 @theme {
     --shadow-lg: 3px 4px 3px rgba(0, 0, 0, 0.35); 
   }
+
