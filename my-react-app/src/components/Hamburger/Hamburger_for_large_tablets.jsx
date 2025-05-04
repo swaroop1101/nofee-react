@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { Menu } from '@mantine/core';
 
 
-function Hamburger(){
+function Hamburger_for_large_tablets(){
 
     const [opened, { toggle, close }] = useDisclosure();
   
@@ -23,7 +23,7 @@ function Hamburger(){
 
     return(
         <>
-        <div className='lg:hidden'>
+        <div className='for-large-tablets-hamburger hidden lg:block lg:ps-2 xl:hidden'>
             <Burger size="md" opened={opened} onClick={toggle} aria-label="Toggle navigation"/>
         </div>
 
@@ -156,4 +156,4 @@ function Hamburger(){
         </>
     )
 }
-export default Hamburger;
+export default Hamburger_for_large_tablets;

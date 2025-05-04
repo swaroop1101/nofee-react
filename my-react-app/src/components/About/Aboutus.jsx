@@ -4,24 +4,23 @@ function Aboutus(){
     return(
         <>
       <div className="border-b py-4">
-        <h1 className="text-3xl sm:text-5xl mt-10 ml-5 sm:ml-40">
-          Learn And <span className="text-blue-600">Practices</span> <br />
-          Without Limit
-        </h1>
-        <div className="flex flex-row scroll-auto sm:flex-row gap-4 mt-10 ml-10 mr-10 sm:ml-40">
+        <div className='w-fit ml-10'>
+          <h1 className="text-3xl xl:text-5xl mt-10 ml-5 xl:ml-12">
+            Learn And <span className="text-blue-600">Practices</span> <br />
+            Without Limit
+          </h1>
+        </div>
+        <div className="flex flex-row scroll-auto mb-14 gap-4 mt-8 mr-10 justify-center sm:block sm:ml-16 sm:space-x-4 xl:ml-24">
             <ScrollLink to="aboutus" smooth={true} duration={600} offset={-50}>
-                <button className="px-4 py-2 border text-black rounded-full cursor-pointer">About us</button>
+              <button className="px-4 py-2 border text-black rounded-full cursor-pointer ">About us</button>
             </ScrollLink>
             <button className="px-4 py-2 border text-black rounded-full">Try for free</button>
         </div>
       </div>
-
      
       <div className="border-b px-5">
-        <div className="flex flex-col md:flex-row  items-center gap-10 mt-10 mb-10 sm:ml-40">
-
-         
-          <div className="flex flex-col items-center">
+        <div className="flex flex-col md:flex-row items-center gap-10 mt-10 mb-15 sm:justify-center xl:space-x-55 xl:mb-10">
+          <div className="flex flex-col items-center sm:mb-10">
             <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px] bg-white flex justify-center items-center shadow-[0_4px_15px_rgba(128,128,128,0.4)] rounded-md ">
               Learn And Perform
             </div>
@@ -33,7 +32,7 @@ function Aboutus(){
           </div>
 
           
-          <div className="flex flex-col items-center  md:mt-0">
+          <div className="flex flex-col items-center md:mt-0 sm:mb-10">
             <div className="w-[200px] h-[200px]  sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px] bg-white flex justify-center items-center shadow-[0_4px_15px_rgba(128,128,128,0.4)] rounded-md">
               Check Your Ability
             </div>
@@ -41,7 +40,6 @@ function Aboutus(){
               Check Your Ability
             </button>
           </div>
-
         </div>
       </div>
 

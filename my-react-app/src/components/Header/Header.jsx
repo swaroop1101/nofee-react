@@ -1,9 +1,9 @@
-import { TfiAlignJustify } from "react-icons/tfi";
 import {Link} from 'react-router-dom';
 import {NavLink, useLocation} from 'react-router-dom';
 import { Menu, Button } from '@mantine/core';
 import React, { useState } from 'react';
 import Hamburger from '/src/components/Hamburger/Hamburger.jsx'
+import Hamburger_for_large_tablets from '/src/components/Hamburger/Hamburger_for_large_tablets.jsx'
 // import { useDisclosure } from '@mantine/hooks';
 // import { Burger } from '@mantine/core';
 
@@ -206,9 +206,7 @@ function Header() {
                 <Link to='/login' className='border rounded-full text-center px-6 text-lg p-1'>Login</Link>
               </div> 
 
-              {/* <div className='for-large-tablets-hamburger hidden lg:block lg:ps-2 xl:hidden'>
-                <Burger size="md" opened={opened} onClick={toggle} aria-label="Toggle navigation"/>
-              </div> */}
+              <Hamburger_for_large_tablets/>
 
           </div>
         </div>
