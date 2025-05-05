@@ -1,21 +1,36 @@
 import {Link as ScrollLink} from 'react-scroll'
 import {Link} from 'react-router-dom'
+import ScrollVelocity from '/Reactbits/ScrollVelocity/ScrollVelocity.jsx';
+import AnimatedContent from '/Reactbits/AnimatedContent/AnimatedContent.jsx'
+
 function Aboutus(){
+
+  const velocity = 80;
     return(
         <>
-      <div className="border-b py-4">
+      <div className="border-b py-4 xl:border-none">
         <div className='w-fit ml-10'>
-          <h1 className="text-3xl xl:text-5xl mt-10 ml-5 xl:ml-12">
-            Learn And <span className="text-blue-600">Practices</span> <br />
+          <h1 className="text-3xl xl:text-6xl mt-10 ml-5 xl:ml-12">
+            Learn And <span className="text-blue-600">Practice</span> <br />
             Without Limit
           </h1>
         </div>
-        <div className="flex flex-row scroll-auto mb-14 gap-4 mt-8 mr-10 justify-center sm:block sm:ml-16 sm:space-x-4 xl:ml-24">
+        <div className="flex flex-row scroll-auto mb-14 gap-4 mt-8 mr-10 justify-center sm:block sm:ml-16 sm:space-x-4 xl:ml-24 xl:text-xl">
             <ScrollLink to="aboutus" smooth={true} duration={600} offset={-50}>
-              <button className="px-4 py-2 border text-black rounded-full cursor-pointer ">About us</button>
+              <button className="px-4 py-2 border text-black rounded-full cursor-pointer">About us</button>
+              
             </ScrollLink>
-            <button className="px-4 py-2 border text-black rounded-full">Try for free</button>
+             <button className="px-4 py-2 border text-black rounded-full">Try for free</button>
+                 
         </div>
+      </div>
+      
+      <div>
+      <ScrollVelocity
+        texts={['PrepVio *', 'Scroll Down']} 
+        velocity={velocity} 
+        className=" custom-scroll-text hidden xl:block xl:font-bold xl:text-orange-300"
+      />
       </div>
      
       <div className="border-b px-5">
@@ -30,7 +45,6 @@ function Aboutus(){
             </button>
             </Link>
           </div>
-
           
           <div className="flex flex-col items-center md:mt-0 sm:mb-10">
             <div className="w-[200px] h-[200px]  sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px] bg-white flex justify-center items-center shadow-[0_4px_15px_rgba(128,128,128,0.4)] rounded-md">

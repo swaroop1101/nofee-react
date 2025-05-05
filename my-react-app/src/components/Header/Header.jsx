@@ -20,15 +20,15 @@ function Header() {
     return (
       <>
       
-        <div className='h-16 bg-[#e6e6e6] shadow-md content-center sticky top-0 sm:h-13 sm:overflow-hidden md:overflow-hidden'>
-          <div className='justify-between px-4 flex items-center md:px-14  lg:justify-center:p-4 xl:px-21'>
+        <div className='h-16 bg-[#e6e6e6] shadow-md content-center sticky top-0 z-[9999] sm:h-16 sm:overflow-hidden md:overflow-hidden'>
+          <div className='justify-between px-4 flex items-center md:px-14 lg:justify-center:p-4 xl:px-21'>
               <div class='Logo' className='flex flex-row items-center gap-3'>
                 <img 
                   className='h-10 rounded-lg'
                   src="./src/logo.jpg"
                   alt="LOGO"
                 />
-                <h1 className='font-bold text-2xl xl:text-xl'>PrepVio</h1>
+                <h1 className='font-bold text-2xl xl:text-2xl'>PrepVio</h1>
               </div>
 
               {/* <div className='lg:hidden'>
@@ -38,7 +38,7 @@ function Header() {
                 <Hamburger/>
 
               <div class='explore-btn hidden lg:block lg:px-3 xl:block content-center xl:px-10 xl:ps-18'>
-                <Menu trigger="hover" openDelay={100} closeDelay={100} position="bottom-start" offset={12}>
+                <Menu trigger="hover" openDelay={100} closeDelay={100} position="bottom-start" offset={18}>
                   <Menu.Target style={{
                     borderRadius:'100px',
                     backgroundColor: '#e6e6e6',
@@ -125,7 +125,7 @@ function Header() {
               </div>
 
               <div class='language-btn hidden lg:block content-center lg:px-3 xl:px-14'>
-                <Menu trigger="hover" openDelay={100} closeDelay={100} position="bottom-start" offset={12}>
+                <Menu trigger="hover" openDelay={100} closeDelay={100} position="bottom-start" offset={18}>
                   <Menu.Target style={{
                     backgroundColor: '#e6e6e6',
                     color: 'black',
@@ -202,7 +202,7 @@ function Header() {
                 <Link to='/signup' className='border rounded-full text-center px-4 text-lg p-1'>SignUp</Link>
               </div>
 
-              <div className='login-btn hidden xl:block content-center px-2'>
+              <div className='login-btn hidden xl:block content-center px-2 '>
                 <Link to='/login' className='border rounded-full text-center px-6 text-lg p-1'>Login</Link>
               </div> 
 
