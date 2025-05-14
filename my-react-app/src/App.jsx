@@ -13,6 +13,9 @@ import Html from '/src/components/Courses/Channels/Html/Html.jsx'
 import CSS from '/src/components/Courses/Channels/CSS/CSS.jsx'
 import JavaScript from '/src/components/Courses/Channels/JavaScript/JS.jsx'
 import Mern from '/src/components/Courses/Channels/Mern/Mern.jsx'
+// Check your ability
+import MainPageCYA from '/src/components/Check-Your-Ability/MainPageCYA'
+
 
 function App() {
   
@@ -26,7 +29,7 @@ function App() {
         {/* Issue to be resolved: 
             The cpp, python and other components should be nested in the courses component */}
 
-        <Route path='courses' element={<Courses/>}/> 
+        <Route path='courses' element={<Courses/>}/>  
         <Route path='courses/cpp' element={<Cpp/>}/> 
         <Route path='courses/c' element={<C/>}/> 
         <Route path='courses/python' element={<Python/>}/> 
@@ -36,6 +39,10 @@ function App() {
         <Route path='courses/javascript' element={<JavaScript/>}/> 
         <Route path='courses/javascript' element={<JavaScript/>}/> 
         <Route path='courses/mern' element={<Mern/>}/> 
+
+          {/* Check your ability */}
+
+        <Route path='check-your-ability' element={<MainPageCYA/>} />
       </Route>
     )
   )

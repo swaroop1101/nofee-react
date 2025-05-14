@@ -8,7 +8,7 @@ function Aboutus(){
   const velocity = 80;
     return(
         <>
-      <div className="border-b py-4 xl:border-none">
+      <div className="border-b py-10 xl:border-none">
         <div className='w-fit ml-10'>
           <h1 className="text-3xl xl:text-6xl mt-10 ml-5 xl:ml-12">
             Learn And <span className="text-blue-600">Practice</span> <br />
@@ -33,7 +33,7 @@ function Aboutus(){
       />
       </div>
      
-      <div className="border-b px-5">
+      <div className="before-aboutus border-b px-5">
         <div className="flex flex-col md:flex-row items-center gap-10 mt-10 mb-15 sm:justify-center xl:space-x-55 xl:mb-10">
           <div className="flex flex-col items-center sm:mb-10">
             <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px] bg-white flex justify-center items-center shadow-[0_4px_15px_rgba(128,128,128,0.4)] rounded-md ">
@@ -50,9 +50,11 @@ function Aboutus(){
             <div className="w-[200px] h-[200px]  sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px] bg-white flex justify-center items-center shadow-[0_4px_15px_rgba(128,128,128,0.4)] rounded-md">
               Check Your Ability
             </div>
-            <button className="w-[200px] h-10 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 transition-shadow duration-300 mt-5">
-              Check Your Ability
-            </button>
+            <Link to="/check-your-ability">
+              <button className="w-[200px] h-10 cursor-pointer bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 transition-shadow duration-300 mt-5">
+                Check Your Ability
+              </button>
+            </Link>
           </div>
         </div>
       </div>

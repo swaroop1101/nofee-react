@@ -40,7 +40,7 @@ function Header() {
               <div class='explore-btn hidden lg:block lg:px-3 xl:block content-center xl:px-10 xl:ps-18'>
                 <Menu trigger="hover" openDelay={100} closeDelay={100} position="bottom-start" offset={18}>
                   <Menu.Target style={{
-                    borderRadius:'100px',
+                    borderRadius:'50px',
                     backgroundColor: '#e6e6e6',
                     border: '1px solid black',
                     color:'black',
@@ -199,11 +199,25 @@ function Header() {
               </div>
 
               <div className='signup-btn hidden xl:block content-center'>
-                <Link to='/signup' className='border rounded-full text-center px-4 text-lg p-1'>SignUp</Link>
+                <NavLink to='/signup' 
+                // className='border rounded-full text-center px-4 text-lg p-1'
+                className={({isActive})=>
+                  `px-5 py-1.5 border rounded-full ${
+                  isActive?"bg-black text-white border-black":"border-black-400 text-black"
+                  }`
+              }
+                >SignUp</NavLink>
               </div>
 
               <div className='login-btn hidden xl:block content-center px-2 '>
-                <Link to='/login' className='border rounded-full text-center px-6 text-lg p-1'>Login</Link>
+                <NavLink to='/login' 
+                // className='border rounded-full text-center px-6 text-lg p-1'
+                className={({isActive})=>
+                  `px-5 py-1.5 border rounded-full ${
+                  isActive?"bg-black text-white border-black":"border-black-400 text-black"
+                  }`
+              }
+                >Login</NavLink>
               </div> 
 
               <Hamburger_for_large_tablets/>
