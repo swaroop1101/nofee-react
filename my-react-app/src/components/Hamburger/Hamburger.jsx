@@ -1,13 +1,18 @@
 import { useDisclosure } from '@mantine/hooks';
 import { Burger } from '@mantine/core';
 import { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { Menu } from '@mantine/core';
 
 
 function Hamburger(){
 
     const [opened, { toggle, close }] = useDisclosure();
+
+    const navigate = useNavigate();
+
+    const location = useLocation();
+    const isExploreActive = location.pathname === '/courses' || location.pathname === '/check-your-ability';
   
     useEffect(() => {
         if (opened) {
@@ -38,10 +43,11 @@ function Hamburger(){
               >Home</NavLink>
 
               <div class='explore'>
-                <Menu position="bottom-start">
+                <Menu position="bottom-start" withinPortal={false}>
 
                   <Menu.Target>
-                      <p className='flex items-center'>Explore
+                      <p className={`flex items-center ${isExploreActive ? 'text-blue-500' : ''}`}>
+                      Explore
                       <span style={{marginLeft:'8px',}}>
                         <svg xmlns="http://www.w3.org/2000/svg" 
                                     fill="none" 
@@ -66,21 +72,33 @@ function Hamburger(){
                       marginRight: '12px',
                       padding:'4px 6px',
                       fontSize:'20px'
-                    }}>
+                    }}
+                    onClick={
+                      ()=>{
+                        navigate('/check-your-ability');
+                        close();
+                      }
+                    }
+                    >
                     With Interview
                     </Menu.Item>
 
-                    <NavLink to='/courses'
-                      onClick={close}
-                    >
+                    
                       <Menu.Item style={{
                           marginRight: '12px',
                           padding:'4px 6px',
                           fontSize:'20px'
-                        }}>
+                        }}
+                        onClick={
+                          ()=>{
+                            navigate('/courses');
+                            close();
+                          }
+                        }>
+
                         Without Interview
                       </Menu.Item>
-                    </NavLink>
+                    
                     
                   </Menu.Dropdown>
 
@@ -88,7 +106,7 @@ function Hamburger(){
               </div>
 
               <div class='language'>
-                <Menu position="bottom-start">
+                <Menu position="bottom-start" withinPortal={false}>
 
                   <Menu.Target>
                         <p className='flex items-center'>Language
