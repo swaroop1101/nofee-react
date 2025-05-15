@@ -71,7 +71,7 @@ function Header() {
                     border: '1px solid black',
                     padding:'0px',
                     }}>
-                      <NavLink to='/courses'
+                      <NavLink to='/check-your-ability'
                         className={({ isActive }) => isActive ? 'active-link' : ''}
                       >
                         <Menu.Item style={{
@@ -88,16 +88,21 @@ function Header() {
                         </Menu.Item>
                       </NavLink>
                     
-                    <Menu.Item style={{
-                      backgroundColor : isHoveringWithoutInterview ? '#799CF4' : '',
-                      color: isHoveringWithoutInterview ? 'white' : 'inherit',
-                      padding:'4px 12px',
-                    }}
-                    onMouseEnter={() => setIsHoveringWithoutInterview(true)}
-                    onMouseLeave={() => setIsHoveringWithoutInterview(false)}
-                    >
-                      <span className='text-lg'>Without Interview</span>
-                    </Menu.Item>
+                    <NavLink to='/courses'
+                        className={({ isActive }) => isActive ? 'active-link' : ''}
+                      >
+                      <Menu.Item style={{
+                        backgroundColor : isHoveringWithoutInterview ? '#799CF4' : '',
+                        color: isHoveringWithoutInterview ? 'white' : 'inherit',
+                        padding:'4px 12px',
+                      }}
+                      onMouseEnter={() => setIsHoveringWithoutInterview(true)}
+                      onMouseLeave={() => setIsHoveringWithoutInterview(false)}
+                      >
+                        <span className='text-lg'>Without Interview</span>
+                      </Menu.Item>
+                    </NavLink>
+
                   </Menu.Dropdown>
                 </Menu>
               </div>
