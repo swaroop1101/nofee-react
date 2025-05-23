@@ -1,7 +1,7 @@
 import './App.css'
 import Layout from '/src/Layout.jsx'
 import Home from '/src/components/Home/Home.jsx'
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Routes } from 'react-router-dom'
 import Login from '/src/components/Authentication/Login.jsx'
 import Signup from '/src/components/Authentication/Signup.jsx'
 import Courses from '/src/components/Courses/Courses.jsx'
@@ -15,6 +15,8 @@ import JavaScript from '/src/components/Courses/Channels/JavaScript/JS.jsx'
 import Mern from '/src/components/Courses/Channels/Mern/Mern.jsx'
 // Check your ability
 import MainPageCYA from '/src/components/Check-Your-Ability/MainPageCYA'
+import InterviewRounds from '/src/components/Check-Your-Ability/InterviewRounds.jsx'
+// import InterviewRounds from '/src/components/Check-Your-Ability/InterviewRules'
 
 
 function App() {
@@ -42,7 +44,10 @@ function App() {
 
           {/* Check your ability */}
 
+        
         <Route path='check-your-ability' element={<MainPageCYA/>} />
+        <Route path='check-your-ability/interview-rounds/:company/:role' element={<InterviewRounds/>} />
+
       </Route>
     )
   )
