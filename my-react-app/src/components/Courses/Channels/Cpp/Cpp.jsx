@@ -1,4 +1,9 @@
 function Cpp() {
+
+    const apnacollege=()=>{
+    window.open(`${window.location.origin}/cpp/apna-college`, '_blank')
+  }
+
     return (
       <>
       <h1 className="text-2xl font-bold text-blue-800 sm:ml-40 mt-10 mb-4 sm:text-2xl sm:font-bold sm:text-blue-800 ml-10 sm:mt-10 sm:mb-4">
@@ -26,7 +31,9 @@ function Cpp() {
         </p>
 
         <div className="flex justify-center sm:justify-start">
-          <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+          <button 
+          onClick={apnacollege}
+          className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>
         </div>

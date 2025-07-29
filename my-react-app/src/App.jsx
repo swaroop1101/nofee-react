@@ -13,6 +13,14 @@ import Html from '/src/components/Courses/Channels/Html/Html.jsx'
 import CSS from '/src/components/Courses/Channels/CSS/CSS.jsx'
 import JavaScript from '/src/components/Courses/Channels/JavaScript/JS.jsx'
 import Mern from '/src/components/Courses/Channels/Mern/Mern.jsx'
+
+import ApnaCollegeCHome from './components/VideoPlayer/C/Apna College/ApnaCollegeCHome.jsx'
+import JennyCHome from './components/VideoPlayer/C/Jennys Lecture/JennyCHome.jsx'
+
+// C++
+import ApnaCollegeCppHome from './components/VideoPlayer/Cpp/Apna College/ApnaCollegeCppHome.jsx'
+
+
 // Check your ability
 import MainPageCYA from '/src/components/Check-Your-Ability/MainPageCYA'
 import InterviewRounds from '/src/components/Check-Your-Ability/InterviewRounds.jsx'
@@ -42,6 +50,10 @@ function App() {
         <Route path='courses/javascript' element={<JavaScript/>}/> 
         <Route path='courses/mern' element={<Mern/>}/> 
 
+        <Route path='/c/apna-college' element={<ApnaCollegeCHome/>}/> 
+        <Route path='/c/jenny-lecture' element={<JennyCHome/>}/> 
+
+        <Route path='/cpp/apna-college' element={<ApnaCollegeCppHome/>}/> 
           {/* Check your ability */}
 
         

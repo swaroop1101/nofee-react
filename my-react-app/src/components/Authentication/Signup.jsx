@@ -4,7 +4,8 @@ const Signup= () => {
       <div className="min-h-screen flex items-center justify-center bg-white">
        <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-90 border-1"> 
         <h1 className="text-2xl font-bold text-center mb-6">Signup</h1>
-        <form className="space-y-4">
+        <form 
+        className="space-y-4">
           <input
             type="text"
             placeholder="Fullname"
