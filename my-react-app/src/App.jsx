@@ -20,6 +20,21 @@ import JennyCHome from './components/VideoPlayer/C/Jennys Lecture/JennyCHome.jsx
 // C++
 import ApnaCollegeCppHome from './components/VideoPlayer/Cpp/Apna College/ApnaCollegeCppHome.jsx'
 
+//Html
+import ApnaCollegeHtmlHome from './components/VideoPlayer/Html/Apna College/ApnaCollegeHtmlHome.jsx'
+import ChaiaurcodeHtmlHome from './components/VideoPlayer/Html/Chai aur Code/ChaiaurcodeHtmlHome.jsx'
+import ProgrammingwithMoshHtmlHome from './components/VideoPlayer/Html/Programming with Mosh/ProgrammingwithMoshHtmlHome.jsx'
+
+//Mern
+import IntelliPaatMernHome from './components/VideoPlayer/Mern/IntelliPaat/IntelliPaatMernHome.jsx'
+import SheryiansCodingSchoolMernHome from './components/VideoPlayer/Mern/Sheryians Coding School/SheryiansCodingSchoolMernHome.jsx'
+import ThapaTechnicalMernHome from './components/VideoPlayer/Mern/Thapa Technical/ThapaTechnicalMernHome.jsx'
+
+//Python
+import ApnaCollegePythonHome from './components/VideoPlayer/Python/Apna College/ApnaCollegePythonHome.jsx'
+import ChaiaurcodePythonHome from './components/VideoPlayer/Python/Chai aur Code/ChaiaurcodePythonHome.jsx'
+import ProgrammingwithMoshPythonHome from './components/VideoPlayer/Python/Programming with Mosh/ProgrammingwithMoshPythonHome.jsx'
+
 
 // Check your ability
 import MainPageCYA from '/src/components/Check-Your-Ability/MainPageCYA'
@@ -54,9 +69,20 @@ function App() {
         <Route path='/c/jenny-lecture' element={<JennyCHome/>}/> 
 
         <Route path='/cpp/apna-college' element={<ApnaCollegeCppHome/>}/> 
-          {/* Check your ability */}
 
-        
+        <Route path='/Python/apna-college' element={<ApnaCollegePythonHome/>}/> 
+        <Route path='/Python/chai-aur-code' element={<ChaiaurcodePythonHome/>}/>  
+        <Route path='/Python/programming-with-mosh' element={<ProgrammingwithMoshPythonHome/>}/>
+          
+        <Route path='/Html/chai-aur-code' element={<ChaiaurcodeHtmlHome/>}/> 
+        <Route path='/Html/apna-college' element={<ApnaCollegeHtmlHome/>}/> 
+        <Route path='/Html/programming-with-mosh' element={<ProgrammingwithMoshHtmlHome/>}/> 
+         
+        <Route path='/Mern/intellipaat' element={<IntelliPaatMernHome/>}/>
+        <Route path='/Mern/sheryians' element={<SheryiansCodingSchoolMernHome/>}/>
+        <Route path='/Mern/thapatechnical' element={<ThapaTechnicalMernHome/>}/>
+          
+          {/* Check your ability */}
         <Route path='check-your-ability' element={<MainPageCYA/>} />
         <Route path='check-your-ability/interview-rounds/:company/:role' element={<InterviewRounds/>} />
 

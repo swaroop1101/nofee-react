@@ -1,7 +1,14 @@
 function Html() {
 
-  const programmingwithmosh=()=>{
-    window.open(`${window.location.origin}/html/programmingwithmosh`, '_blank')
+  function chaiaurcode(){
+    window.open(`${window.location.origin}/Html/chai-aur-code`, '_blank');
+  }
+  function apnacollege(){
+    window.open(`${window.location.origin}/Html/apna-college`, '_blank');
+  }
+
+  function programmingwithmosh(){
+    window.open(`${window.location.origin}/Html/programming-with-mosh`, '_blank');
   }
     return (
       <>
@@ -30,7 +37,9 @@ function Html() {
         </p>
   
         <div className="flex justify-center sm:justify-start">
-          <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+          <button 
+          onClick={apnacollege}
+          className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>
         </div>
@@ -78,7 +87,9 @@ function Html() {
   Baaki baad me.</p>
   
         <div className="flex justify-center sm:justify-start">
-          <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+          <button 
+          onClick={chaiaurcode}
+          className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>
         </div>
@@ -123,7 +134,7 @@ function Html() {
   
         <div className="flex justify-center sm:justify-start">
           <button 
-          onClick={() => navigate("/html/programming-with-mosh")}
+          onClick={programmingwithmosh}
           className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>

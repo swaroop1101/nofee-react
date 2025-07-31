@@ -1,4 +1,17 @@
 function Mern() {
+
+  function thapatechnical(){
+    window.open(`${window.location.origin}/Mern/thapatechnical`, '_blank');
+  }
+
+  function sheryians(){
+    window.open(`${window.location.origin}/Mern/sheryians`, '_blank');
+  }
+
+  function intellipaat(){
+    window.open(`${window.location.origin}/Mern/intellipaat`, '_blank');
+  }
+
     return (
       <>
       <h1 className="text-2xl font-bold text-blue-800 sm:ml-40 sm:mt-10 sm:mb-4 sm:text-2xl sm:font-bold sm:text-blue-800 ml-10 mt-10 mb-4">
@@ -14,7 +27,7 @@ function Mern() {
       
       
       <div className="h-[130px] w-[150px] sm:h-40 sm:w-40 border rounded-md mx-auto sm:mx-0 mb-4 sm:mb-0">
-      <img src="/src/components/Courses/Channels/Mern/hitesh choudhary.jpg" className='w-full h-full object-cover'></img>
+      <img src="/src/components/Courses/Channels/Mern/Thapa Technical.jpg" className='w-full h-full object-cover'></img>
 
       </div>
   
@@ -22,17 +35,18 @@ function Mern() {
       <div className="flex flex-col sm:w-full">
         
         
-        <p className="text-lg font-semibold text-center sm:text-left sm:mt-0 mt-2">Chai aur Code</p>
+        <p className="text-lg font-semibold text-center sm:text-left sm:mt-0 mt-2">Thapa Technical</p>
         
         <h6 className="text-sm text-gray-700 text-center sm:text-left mt-1">Description</h6>
   
         <p className="text-sm text-gray-700 text-center sm:text-left mt-1">
-        A channel dedicated to chai and coding in HINDI. A lot happens over chai and I am a big-time chai lover. Let's sip tea and write some code and some chit-chat.
-  Ab ye b Hindi me linkne to mat bolna, abhi ke liye itna hi likenge.
-  Baaki baad me.</p>
+        Welcome Guys, This channel is all about Website Development, Technical, Tips and Tricks, 
+        Designs Principle and Programming videos in the Hindi Language.</p>
   
         <div className="flex justify-center sm:justify-start">
-          <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+          <button 
+          onClick={thapatechnical}
+          className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>
         </div>
@@ -76,7 +90,9 @@ function Mern() {
         The Sheryians Coding School is a step towards helping our Indian audience to learn modern design and coding practices.</p>
   
         <div className="flex justify-center sm:justify-start">
-          <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+          <button 
+          onClick={sheryians}
+          className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>
         </div>
@@ -104,22 +120,25 @@ function Mern() {
       
       
       <div className="h-[130px] w-[150px] sm:h-40 sm:w-40 border rounded-md mx-auto sm:mx-0 mb-4 sm:mb-0">
-      <img src="/src/components/Courses/Channels/Mern/simplilearn.png" className='w-full h-full object-contain'></img>
+      <img src="/src/components/Courses/Channels/Mern/IntelliPaat.jpg" className='w-full h-full object-contain'></img>
       </div>
   
       
       <div className="flex flex-col sm:w-full">
         
         
-        <p className="text-lg font-semibold text-center sm:text-left sm:mt-0 mt-2">Simplilearn</p>
+        <p className="text-lg font-semibold text-center sm:text-left sm:mt-0 mt-2">IntelliPaat</p>
         
         <h6 className="text-sm text-gray-700 text-center sm:text-left mt-1">Description</h6>
   
         <p className="text-sm text-gray-700 text-center sm:text-left mt-1">
-        Simplilearn is a global leader in online training, helping over 8 million professionals gain in-demand digital skills. Partnering with top universities and tech companies, it offers programs across AI, cybersecurity, product management, and more.</p>
+        Intellipaat offers industry-designed online certification courses in 150+ technologies, 
+        helping professionals and corporates upskill through expert training, hands-on projects, progress tracking, and globally recognized certifications.</p>
   
         <div className="flex justify-center sm:justify-start">
-          <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+          <button 
+          onClick={intellipaat}
+          className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
             Start Learning
           </button>
         </div>
